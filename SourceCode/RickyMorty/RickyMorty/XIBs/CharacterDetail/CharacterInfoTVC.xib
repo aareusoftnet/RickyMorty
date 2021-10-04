@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="CharacterInfoTVC" customModule="RickyMorty" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jb4-fa-n1C">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Ulq-Qi-hYO">
+                                <rect key="frame" x="20" y="0.0" width="349" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STATUS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUF-MX-XfG">
+                                        <rect key="frame" x="0.0" y="0.0" width="58.333333333333336" height="60"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="16"/>
+                                        <color key="textColor" name="appFFFFFF"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dead" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dF-vM-gxJ">
+                                        <rect key="frame" x="174.66666666666663" y="0.0" width="174.33333333333337" height="60"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="12"/>
+                                        <color key="textColor" name="appFFFFFFA80"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconCheckBox" translatesAutoresizingMaskIntoConstraints="NO" id="P5P-cf-GSg">
+                                <rect key="frame" x="374" y="17.666666666666668" width="25" height="25.000000000000004"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="P5P-cf-GSg" secondAttribute="height" multiplier="1:1" id="Vbb-T8-H3J"/>
+                                    <constraint firstAttribute="height" constant="25" id="hlm-Gc-4P0"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="app1E1E1E"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Ulq-Qi-hYO" secondAttribute="bottom" id="I5j-Lg-iN4"/>
+                            <constraint firstItem="P5P-cf-GSg" firstAttribute="centerY" secondItem="Jb4-fa-n1C" secondAttribute="centerY" id="fYZ-bm-55q"/>
+                            <constraint firstItem="P5P-cf-GSg" firstAttribute="leading" secondItem="Ulq-Qi-hYO" secondAttribute="trailing" constant="5" id="rln-rg-eNV"/>
+                            <constraint firstItem="Ulq-Qi-hYO" firstAttribute="leading" secondItem="Jb4-fa-n1C" secondAttribute="leading" constant="20" id="x0d-7j-bVm"/>
+                            <constraint firstItem="Ulq-Qi-hYO" firstAttribute="top" secondItem="Jb4-fa-n1C" secondAttribute="top" id="yHi-VE-WTp"/>
+                            <constraint firstAttribute="trailing" secondItem="P5P-cf-GSg" secondAttribute="trailing" constant="15" id="zPB-QP-qfs"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Jb4-fa-n1C" secondAttribute="bottom" id="68Z-ne-2YV"/>
+                    <constraint firstAttribute="trailing" secondItem="Jb4-fa-n1C" secondAttribute="trailing" id="NuY-Yb-dAi"/>
+                    <constraint firstItem="Jb4-fa-n1C" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Tdv-PG-Tn8"/>
+                    <constraint firstItem="Jb4-fa-n1C" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="htr-vA-R2b"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="constraintStatusHeight" destination="hlm-Gc-4P0" id="rou-xL-rnK"/>
+                <outlet property="imgVwStatus" destination="P5P-cf-GSg" id="Y9i-Zs-1eb"/>
+                <outlet property="lblInfo" destination="8dF-vM-gxJ" id="jhK-La-7o4"/>
+                <outlet property="lblTitle" destination="ZUF-MX-XfG" id="OVh-zb-y8N"/>
+                <outlet property="viewContainer" destination="Jb4-fa-n1C" id="Hoc-bB-6A4"/>
+                <outlet property="viewStackContainer" destination="Ulq-Qi-hYO" id="cye-hV-opa"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="110"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iconCheckBox" width="40" height="40"/>
+        <namedColor name="app1E1E1E">
+            <color red="0.11764705882352941" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appFFFFFF">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appFFFFFFA80">
+            <color red="1" green="1" blue="1" alpha="0.80000001192092896" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

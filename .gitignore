@@ -1,0 +1,16 @@
+# iOS Ignorance
+*.DS_Store
+.DS_Store
+SourceCode/RickyMorty/*.DS_Store
+SourceCode/RickyMorty/.DS_Store
+SourceCode/RickyMorty/Podfile.lock
+SourceCode/RickyMorty/RickyMorty.xcodeproj/project.xcworkspace
+SourceCode/RickyMorty/RickyMorty.xcodeproj/xcuserdata
+SourceCode/RickyMorty/RickyMorty.xcodeproj/xcshareddata
+SourceCode/RickyMorty/RickyMorty.xcodeproj/project.xcworkspace/xcuserdata
+SourceCode/RickyMorty/RickyMorty.xcodeproj/project.xcworkspace/SourceCode/RickyMorty/RickyMorty.xcworkspace
+SourceCode/RickyMorty/RickyMorty.xcworkspace/contents.xcworkspacedata
+SourceCode/RickyMorty/RickyMorty.xcworkspace/xcuserdata
+SourceCode/RickyMorty/RickyMorty.xcworkspace
+SourceCode/RickyMorty/RickyMorty.xcworkspace/xcshareddata
+SourceCode/RickyMorty/Pods

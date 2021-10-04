@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Pbo-5w-7lD" customClass="NavigationBar" customModule="RickyMorty" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R6g-Jk-GWs">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzj-o4-czQ">
+                            <rect key="frame" x="10" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="0G8-RP-duI"/>
+                                <constraint firstAttribute="width" secondItem="lzj-o4-czQ" secondAttribute="height" id="dg7-RO-buU"/>
+                            </constraints>
+                            <connections>
+                                <action selector="onLeftViewTapped:" destination="Pbo-5w-7lD" eventType="touchUpInside" id="Zpq-cF-cW9"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9r-jh-CTb">
+                            <rect key="frame" x="54" y="0.0" width="306" height="44"/>
+                            <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
+                            <color key="textColor" name="appFFFFFF"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9B-Dc-bPc">
+                            <rect key="frame" x="360" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="U9B-Dc-bPc" secondAttribute="height" id="5Ed-iC-yjJ"/>
+                                <constraint firstAttribute="height" constant="44" id="pL2-sa-VBM"/>
+                            </constraints>
+                            <connections>
+                                <action selector="onRightViewTapped:" destination="Pbo-5w-7lD" eventType="touchUpInside" id="u06-Ye-zsl"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ld3-2k-FsQ">
+                            <rect key="frame" x="0.0" y="43.333333333333336" width="414" height="0.6666666666666643"/>
+                            <color key="backgroundColor" name="appFFFFFFA20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.67000000000000004" id="Ee6-YC-bE0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Ld3-2k-FsQ" firstAttribute="leading" secondItem="R6g-Jk-GWs" secondAttribute="leading" id="5tH-h6-yMl"/>
+                        <constraint firstItem="e9r-jh-CTb" firstAttribute="leading" secondItem="lzj-o4-czQ" secondAttribute="trailing" id="Fg6-hB-mOl"/>
+                        <constraint firstAttribute="trailing" secondItem="U9B-Dc-bPc" secondAttribute="trailing" constant="10" id="H0w-Vb-OWC"/>
+                        <constraint firstItem="lzj-o4-czQ" firstAttribute="leading" secondItem="R6g-Jk-GWs" secondAttribute="leading" constant="10" id="H45-wK-ojy"/>
+                        <constraint firstItem="e9r-jh-CTb" firstAttribute="bottom" secondItem="lzj-o4-czQ" secondAttribute="bottom" id="PcW-Mr-Oc0"/>
+                        <constraint firstAttribute="bottom" secondItem="Ld3-2k-FsQ" secondAttribute="bottom" id="bDj-Zl-izj"/>
+                        <constraint firstAttribute="bottom" secondItem="U9B-Dc-bPc" secondAttribute="bottom" id="jpQ-pB-uqr"/>
+                        <constraint firstItem="U9B-Dc-bPc" firstAttribute="leading" secondItem="e9r-jh-CTb" secondAttribute="trailing" id="u6t-28-6er"/>
+                        <constraint firstItem="e9r-jh-CTb" firstAttribute="top" secondItem="lzj-o4-czQ" secondAttribute="top" id="vPt-wC-y7v"/>
+                        <constraint firstAttribute="trailing" secondItem="Ld3-2k-FsQ" secondAttribute="trailing" id="wXE-Rt-IUY"/>
+                        <constraint firstItem="lzj-o4-czQ" firstAttribute="centerY" secondItem="R6g-Jk-GWs" secondAttribute="centerY" id="z0o-7E-ybW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="9DJ-ko-4Ye"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="R6g-Jk-GWs" secondAttribute="trailing" id="UtJ-ZB-hGX"/>
+                <constraint firstItem="R6g-Jk-GWs" firstAttribute="leading" secondItem="Pbo-5w-7lD" secondAttribute="leading" id="VJR-J3-FWt"/>
+                <constraint firstAttribute="bottom" secondItem="R6g-Jk-GWs" secondAttribute="bottom" id="arD-d9-4XT"/>
+                <constraint firstItem="R6g-Jk-GWs" firstAttribute="top" secondItem="Pbo-5w-7lD" secondAttribute="top" id="wcm-Ic-uum"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnLeft" destination="lzj-o4-czQ" id="3jm-sJ-Hds"/>
+                <outlet property="btnRight" destination="U9B-Dc-bPc" id="DVu-mi-0IP"/>
+                <outlet property="lblSeparator" destination="Ld3-2k-FsQ" id="fHI-H9-I2t"/>
+                <outlet property="lblTitle" destination="e9r-jh-CTb" id="PdE-hv-KKj"/>
+                <outlet property="viewContainer" destination="R6g-Jk-GWs" id="XiK-c7-SYh"/>
+            </connections>
+            <point key="canvasLocation" x="-35" y="41"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="appFFFFFF">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appFFFFFFA20">
+            <color red="1" green="1" blue="1" alpha="0.20000000298023224" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

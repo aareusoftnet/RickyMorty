@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="KYz-ng-bVN" customClass="TabBarView" customModule="RickyMorty" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jlr-T0-d7D">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8I-WM-jJf">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="0.66666666666666663"/>
+                            <color key="backgroundColor" name="appFFFFFFA20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.67000000000000004" id="SLp-ru-xlf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="110" translatesAutoresizingMaskIntoConstraints="NO" id="qi6-Z8-Klr">
+                            <rect key="frame" x="92" y="5" width="230" height="41"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EMw-eA-90O">
+                                    <rect key="frame" x="0.0" y="0.0" width="60" height="41"/>
+                                    <subviews>
+                                        <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="jjI-Be-b4h">
+                                            <rect key="frame" x="0.0" y="0.0" width="60" height="41"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Omy-bV-Gqd">
+                                                    <rect key="frame" x="16" y="0.0" width="28" height="25.333333333333332"/>
+                                                    <color key="tintColor" name="appFF4C00"/>
+                                                    <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                                                    <state key="normal" image="iconEpisodeTab"/>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Episode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wf-KI-y0g">
+                                                    <rect key="frame" x="7" y="27.333333333333339" width="46" height="13.666666666666668"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="11"/>
+                                                    <color key="textColor" name="appFF4C00"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ife-Lw-bsu">
+                                            <rect key="frame" x="0.0" y="0.0" width="60" height="41"/>
+                                            <connections>
+                                                <action selector="btnTabTap:" destination="KYz-ng-bVN" eventType="touchUpInside" id="UrU-sS-bc1"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Ife-Lw-bsu" firstAttribute="trailing" secondItem="jjI-Be-b4h" secondAttribute="trailing" id="4oC-jL-6En"/>
+                                        <constraint firstItem="jjI-Be-b4h" firstAttribute="top" secondItem="EMw-eA-90O" secondAttribute="top" id="5Ra-zl-1x6"/>
+                                        <constraint firstAttribute="trailing" secondItem="jjI-Be-b4h" secondAttribute="trailing" id="T7X-zf-TuA"/>
+                                        <constraint firstAttribute="bottom" secondItem="jjI-Be-b4h" secondAttribute="bottom" id="WA3-CA-Cu3"/>
+                                        <constraint firstItem="jjI-Be-b4h" firstAttribute="leading" secondItem="EMw-eA-90O" secondAttribute="leading" id="dTv-u0-T9f"/>
+                                        <constraint firstItem="Ife-Lw-bsu" firstAttribute="top" secondItem="jjI-Be-b4h" secondAttribute="top" id="eaq-gu-hm7"/>
+                                        <constraint firstItem="Ife-Lw-bsu" firstAttribute="bottom" secondItem="jjI-Be-b4h" secondAttribute="bottom" id="nQM-pb-FCg"/>
+                                        <constraint firstItem="Ife-Lw-bsu" firstAttribute="leading" secondItem="jjI-Be-b4h" secondAttribute="leading" id="vaB-9V-XNH"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YSW-pP-COt">
+                                    <rect key="frame" x="170" y="0.0" width="60" height="41"/>
+                                    <subviews>
+                                        <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="knM-yL-o6P">
+                                            <rect key="frame" x="0.0" y="0.0" width="60" height="41"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9Y-P3-Ygy">
+                                                    <rect key="frame" x="17" y="0.0" width="26" height="25.333333333333332"/>
+                                                    <color key="tintColor" name="appFF4C00"/>
+                                                    <inset key="imageEdgeInsets" minX="2" minY="2" maxX="2" maxY="2"/>
+                                                    <state key="normal" image="iconLocationTab"/>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWI-Ai-X8g">
+                                                    <rect key="frame" x="5" y="27.333333333333339" width="50" height="13.666666666666668"/>
+                                                    <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="11"/>
+                                                    <color key="textColor" name="appFF4C00"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceH-Oa-bqe">
+                                            <rect key="frame" x="0.0" y="0.0" width="60" height="41"/>
+                                            <connections>
+                                                <action selector="btnTabTap:" destination="KYz-ng-bVN" eventType="touchUpInside" id="6b7-41-LvR"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="knM-yL-o6P" firstAttribute="leading" secondItem="YSW-pP-COt" secondAttribute="leading" id="4RR-JX-ccD"/>
+                                        <constraint firstItem="ceH-Oa-bqe" firstAttribute="bottom" secondItem="knM-yL-o6P" secondAttribute="bottom" id="KJw-MU-F8o"/>
+                                        <constraint firstAttribute="trailing" secondItem="knM-yL-o6P" secondAttribute="trailing" id="UsJ-zH-hUm"/>
+                                        <constraint firstAttribute="bottom" secondItem="knM-yL-o6P" secondAttribute="bottom" id="Xwm-7z-zbg"/>
+                                        <constraint firstItem="ceH-Oa-bqe" firstAttribute="trailing" secondItem="knM-yL-o6P" secondAttribute="trailing" id="c58-d3-UHB"/>
+                                        <constraint firstItem="knM-yL-o6P" firstAttribute="top" secondItem="YSW-pP-COt" secondAttribute="top" id="cBE-1z-rSM"/>
+                                        <constraint firstItem="ceH-Oa-bqe" firstAttribute="leading" secondItem="knM-yL-o6P" secondAttribute="leading" id="tu7-iy-JyD"/>
+                                        <constraint firstItem="ceH-Oa-bqe" firstAttribute="top" secondItem="knM-yL-o6P" secondAttribute="top" id="yKM-Hm-Ecm"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="p8I-WM-jJf" firstAttribute="top" secondItem="jlr-T0-d7D" secondAttribute="top" id="2x3-pE-U1y"/>
+                        <constraint firstAttribute="trailing" secondItem="p8I-WM-jJf" secondAttribute="trailing" id="70e-r7-5c2"/>
+                        <constraint firstItem="p8I-WM-jJf" firstAttribute="leading" secondItem="jlr-T0-d7D" secondAttribute="leading" id="BJq-yy-maZ"/>
+                        <constraint firstAttribute="bottom" secondItem="qi6-Z8-Klr" secondAttribute="bottom" constant="3" id="TI0-bi-Yv6"/>
+                        <constraint firstItem="qi6-Z8-Klr" firstAttribute="centerX" secondItem="jlr-T0-d7D" secondAttribute="centerX" id="gYB-gd-PN7"/>
+                        <constraint firstItem="qi6-Z8-Klr" firstAttribute="top" secondItem="jlr-T0-d7D" secondAttribute="top" constant="5" id="gd8-LF-ScS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Ki2-79-VX1"/>
+            <constraints>
+                <constraint firstItem="Ki2-79-VX1" firstAttribute="bottom" secondItem="jlr-T0-d7D" secondAttribute="bottom" id="1FL-Mn-Fjc"/>
+                <constraint firstItem="jlr-T0-d7D" firstAttribute="leading" secondItem="KYz-ng-bVN" secondAttribute="leading" id="9O6-0S-r8N"/>
+                <constraint firstItem="jlr-T0-d7D" firstAttribute="top" secondItem="KYz-ng-bVN" secondAttribute="top" id="OvV-Ht-tfu"/>
+                <constraint firstAttribute="trailing" secondItem="jlr-T0-d7D" secondAttribute="trailing" id="qLC-95-S9P"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnEpisode" destination="Omy-bV-Gqd" id="rj3-dY-EOU"/>
+                <outlet property="btnLocation" destination="a9Y-P3-Ygy" id="6UI-pL-INe"/>
+                <outlet property="lblEpisode" destination="7wf-KI-y0g" id="KcM-Ka-EdB"/>
+                <outlet property="lblLocation" destination="qWI-Ai-X8g" id="qfD-LZ-WA2"/>
+                <outlet property="viewContainer" destination="jlr-T0-d7D" id="Neu-cy-v9Y"/>
+                <outlet property="viewEpisode" destination="EMw-eA-90O" id="YXf-PF-dyY"/>
+                <outlet property="viewEpisodeStack" destination="jjI-Be-b4h" id="wah-bb-ndq"/>
+                <outlet property="viewLocation" destination="YSW-pP-COt" id="d6W-xD-QHH"/>
+                <outlet property="viewLocationStack" destination="knM-yL-o6P" id="L3D-KS-Lnl"/>
+                <outlet property="viewTabBarContainer" destination="qi6-Z8-Klr" id="CoS-Hk-ZJj"/>
+            </connections>
+            <point key="canvasLocation" x="-365.21739130434787" y="124.55357142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconEpisodeTab" width="28" height="25"/>
+        <image name="iconLocationTab" width="26" height="25"/>
+        <namedColor name="appFF4C00">
+            <color red="1" green="0.29803921568627451" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="appFFFFFFA20">
+            <color red="1" green="1" blue="1" alpha="0.20000000298023224" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

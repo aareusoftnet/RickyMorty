@@ -1,0 +1,66 @@
+/* 
+  Localizable.strings
+  RickyMorty  
+*/
+
+/*---------------------
+ // MARK: - APIManager message(s)
+ ------------------------*/
+"~Your internet connection seems to be down." = "Your internet connection seems to be down.";
+
+
+/*---------------------
+ // MARK: - TabBar String(s)
+ ------------------------*/
+"~Episode" = "Episode";
+"~Location" = "Location";
+
+
+/*---------------------
+ // MARK: - EpisodeTab String(s)
+ ------------------------*/
+"~Search episode by name" = "Search episode by name";
+"~Searching for" = "Searching for";
+"~No character" = "No character";
+"~Character" = " Character";
+"~Characters" = " Characters";
+"~NO EPISODE FOUNDS WITH SEARCHED TERMS." = "NO EPISODE FOUNDS WITH SEARCHED TERMS." ;
+
+
+/*---------------------
+ // MARK: - LocationTab String(s)
+ ------------------------*/
+"~Search location by name" = "Search location by name";
+"~No residents" = "No residents";
+"~Resident" = " Resident";
+"~Residents" = " Residents";
+"~NO LOCATION FOUNDS WITH SEARCHED TERMS." = "NO LOCATION FOUNDS WITH SEARCHED TERMS." ;
+
+
+/*---------------------
+ // MARK: - CharacterList String(s)
+ ------------------------*/
+"~Filter By" = "Filter By";
+"~Status" = "Status";
+"~Alive" = "Alive";
+"~Dead" = "Dead";
+"~Unknown" = "Unknown";
+"~Gender" = "Gender";
+"~Female" = "Female";
+"~Male" = "Male";
+"~Genderless" = "Genderless";
+"~Clear All" = "Clear All";
+"~Apply" = "Apply";
+"~NO CHARACTER FOUNDS WITH APPLIED FILTERS." = "NO CHARACTER FOUNDS WITH APPLIED FILTERS.";
+"~Share" = "Share";
+
+
+/*---------------------
+ // MARK: - CharacterDetails String(s)
+ ------------------------*/
+"~STATUS" = "STATUS";
+"~SPECIES" = "SPECIES";
+"~GENDER" = "GENDER";
+"~TYPE" = "TYPE";
+"~ORIGIN" = "ORIGIN";
+"~LAST LOCATION" = "LAST LOCATION";
